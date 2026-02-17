@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    transition: 0.3s;
+}
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+}
+
+body.dark input {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark button {
+    background: #444;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.form-card {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #2d89ef;
+    color: white;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background: #e74c3c;
+}
+
+#map {
+    height: 500px;
+    border-radius: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.fuel-stop {
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #f9fafc;
+    border-left: 4px solid #2d89ef;
+}
+
+.fuel-stop.cheapest {
+    border-left: 4px solid #2ecc71;
+    background: #eafaf1;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #2d89ef;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
